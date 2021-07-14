@@ -23,8 +23,6 @@ def to_camel(s:str):
         count += 1
         if c == "_":
             string.pop(count - 1)
-            c = string[count - 1]
-            print(c.upper())
             string[count - 1] = c.upper()
     return "".join(string)
 
